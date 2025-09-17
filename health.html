@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Health & Fitness Tracker</title>
+  <link rel="stylesheet" href="health.css">
+</head>
+<body>
+  <h2>Health & Fitness Tracker</h2>
+
+  <form id="trackerForm">
+    <label for="steps">Steps Walked:</label>
+    <input type="number" id="steps" min="0" placeholder="Enter steps walked" required />
+
+    <label for="water">Water Intake (liters):</label>
+    <input type="number" id="water" min="0" step="0.1" placeholder="Enter water intake" required />
+
+    <label for="sleep">Sleep Time (hours):</label>
+    <input type="number" id="sleep" min="0" max="24" step="0.1" placeholder="Enter sleep hours" required />
+
+    <button type="submit">Save Data</button>
+  </form>
+
+  <div class="summary" id="summary" style="display:none;"></div>
+  <script src="health.js"></script>
+
+</body>
+</html>
